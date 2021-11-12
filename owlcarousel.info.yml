@@ -1,6 +1,6 @@
 name: Owl Carousel
 type: module
-description: Owl Carousel jQuery plugin integration module.
+description: Owl Carousel 2 jQuery plugin integration module.
 core: 8.x
 core_version_requirement: ^8 || ^9
 package: Owl Carousel
@@ -9,6 +9,6 @@ dependencies:
   - drupal:image
 
 # Information added by Drupal.org packaging script on 2021-05-30
-version: '8.x-1.0-beta1'
+version: '8.x-2.0-beta1'
 project: 'owlcarousel'
-datestamp: 1622410058
+datestamp: 1636757934
