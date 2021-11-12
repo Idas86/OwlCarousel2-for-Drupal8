@@ -5,6 +5,7 @@ This module integrates Owl Carousel 2 for views and field.
 Daniele Monchiero [idas](https://www.drupal.org/u/idas)
 
 Based on project of:
+
 Nicholas James [swim](https://www.drupal.org/u/swim)  
 Anish Sheela [anisha](https://www.drupal.org/u/anisha)   
 Nicolas Borda [ipwa](https://www.drupal.org/u/ipwa)  
