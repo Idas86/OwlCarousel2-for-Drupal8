@@ -36,6 +36,17 @@ class OwlCarouselGlobal {
 		$settings['autoplayHoverPause'] = (bool) $settings['autoplayHoverPause'];
 		$settings['dots'] = (bool) $settings['dots'];
 
+		if($settings['itemsMobile']) {
+			$dimensioneMobile = (int) $settings['dimensionMobile'];
+			$itemsMobile['items'] = (int) $settings['itemsMobile'];
+			$settings['responsive'][$dimensioneMobile] = $itemsMobile;
+		}
+
+		if($settings['itemsDesktop']) {
+			$dimensioneDesktop = (int) $settings['dimensionDesktop'];
+			$itemsDesktop['items'] = (int) $settings['itemsDesktop'];
+			$settings['responsive'][$dimensioneDesktop] = $itemsDesktop;
+		}
 
 		if (isset($settings['image_style'])) {
 			unset($settings['image_style']);
