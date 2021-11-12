@@ -105,7 +105,76 @@ class OwlCarouselFieldFormatter extends EntityReferenceFormatterBase implements 
       '#description' => $this->t('Maximum amount of items displayed at a time with the widest browser width.'),
       '#default_value' => $this->getSetting('items'),
     ];
-		
+		// Items.
+		$element['items'] = [
+			'#type' => 'number',
+			'#title' => $this->t('Items'),
+			'#default_value' => $this->options['items'],
+			'#description' => $this->t('Maximum amount of items displayed at a time with the widest browser width.'),
+		];
+		// Margin.
+		$element['margin'] = [
+			'#type' => 'number',
+			'#title' => $this->t('Margin'),
+			'#default_value' => $this->options['margin'],
+			'#description' => $this->t('Margin from items.'),
+		];
+		// Navigation.
+		$element['nav'] = [
+			'#type' => 'checkbox',
+			'#title' => $this->t('Navigation'),
+			'#default_value' => $this->options['nav'],
+			'#description' => $this->t('Display "next" and "prev" buttons.'),
+		];
+		// Autoplay.
+		$element['autoplay'] = [
+			'#type' => 'checkbox',
+			'#title' => $this->t('Autoplay'),
+			'#default_value' => $this->options['autoplay'],
+		];
+		// AutoplayHoverPause.
+		$element['autoplayHoverPause'] = [
+			'#type' => 'checkbox',
+			'#title' => $this->t('Pause on hover'),
+			'#default_value' => $this->options['autoplayHoverPause'],
+			'#description' => $this->t('Pause autoplay on mouse hover.'),
+		];
+		// Dots.
+		$element['dots'] = [
+			'#type' => 'checkbox',
+			'#title' => $this->t('Dots'),
+			'#default_value' => $this->options['dots'],
+			'#description' => $this->t('Show dots.'),
+		];
+		// DimensionMobile.
+		$element['dimensionMobile'] = [
+			'#type' => 'number',
+			'#title' => $this->t('Mobile dimension'),
+			'#default_value' => $this->options['dimensionMobile'],
+			'#description' => $this->t('Set the mobile dimensioni in px.'),
+		];
+		// ItemsMobile.
+		$element['itemsMobile'] = [
+			'#type' => 'number',
+			'#title' => $this->t('Mobile items'),
+			'#default_value' => $this->options['itemsMobile'],
+			'#description' => $this->t('Maximum amount of items displayed at mobile.'),
+		];
+		// DimensionDesktop.
+		$element['dimensionDesktop'] = [
+			'#type' => 'number',
+			'#title' => $this->t('Desktop dimension'),
+			'#default_value' => $this->options['dimensionDesktop'],
+			'#description' => $this->t('Set the desktop dimensioni in px.'),
+		];
+		// itemsDesktop.
+		$element['itemsDesktop'] = [
+			'#type' => 'number',
+			'#title' => $this->t('Desktop items'),
+			'#default_value' => $this->options['itemsDesktop'],
+			'#description' => $this->t('Maximum amount of items displayed at desktop.'),
+		];
+
     return $element + parent::settingsForm($form, $form_state);
   }
 
